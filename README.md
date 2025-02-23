@@ -1,10 +1,17 @@
+# My Minimalist Portfolio 🚀
 
----
+This is my **super minimalist black-and-white portfolio** built using:
+- Three.js for a 3D animated background
+- GitHub API to fetch my latest projects
+- Hosted on GitHub Pages
 
-### Key Features of the Redesign
-1. **Single-Page Simplicity**: Everything is contained in one HTML file for easy navigation and simplicity.
-2. **Minimal CSS**: Lightweight styles with a focus on readability and structure.
-3. **Dynamic Content**: Projects are fetched in real-time from the GitHub API.
-4. **Quick Deployment**: Easy to maintain and deploy via GitHub Pages.
+## 🌍 Live Demo
+[https://your-username.github.io/my-portfolio](https://your-username.github.io/my-portfolio)
 
-Let me know if you'd like further customizations or help with deployment!
+## 🛠 Installation
+1. Clone the repository
+2. Open `index.html` in a browser
+
+## 📜 License
+MIT License
+
