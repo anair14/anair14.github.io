@@ -7,7 +7,7 @@ document.body.appendChild(renderer.domElement);
 
 // Create a rotating wireframe torus knot
 const geometry = new THREE.TorusKnotGeometry(10, 3, 100, 16);
-const material = new THREE.MeshBasicMaterial({ color: 0xffffff, wireframe: true });
+const material = new THREE.MeshBasicMaterial({ color: 0x222222, wireframe: true });
 const torusKnot = new THREE.Mesh(geometry, material);
 scene.add(torusKnot);
 
@@ -22,7 +22,6 @@ function animate() {
 }
 animate();
 
-// 🖥️ Fetch GitHub Repositories
 async function fetchGitHubProjects() {
     const username = "anair14"; 
     const response = await fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=10`);
