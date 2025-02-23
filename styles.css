@@ -1,48 +1,28 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background: black;
-    color: white;
-    font-family: sans-serif;
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    color: #444;
+    text-transform: lowercase;
 }
 
-canvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
-.container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-}
-
-h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-ul {
+#projects {
     list-style: none;
     padding: 0;
+    margin-top: 20px;
 }
 
-li {
-    margin: 10px 0;
-    font-size: 1.2em;
+#projects li {
+    margin: 5px 0;
 }
 
-a {
-    color: white;
+#projects a {
+    color: #444;
     text-decoration: none;
+    font-size: 16px;
 }
 
-a:hover {
+#projects a:hover {
     text-decoration: underline;
 }
 
