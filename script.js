@@ -24,7 +24,7 @@ animate();
 
 // 🖥️ Fetch GitHub Repositories
 async function fetchGitHubProjects() {
-    const username = "anair14.github.io"; 
+    const username = "anair14"; 
     const response = await fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=10`);
     const repos = await response.json();
     
