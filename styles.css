@@ -7,7 +7,7 @@ body, html {
     background: black;
     text-align: center;
     font-family: 'JetBrains Mono', monospace;
-    color: #red;
+    color: orange;
     text-transform: lowercase;
 }
 
@@ -41,7 +41,7 @@ li {
 }
 
 a {
-    color: red;
+    color: orange;
     text-decoration: none;
 }
 
