@@ -39,6 +39,7 @@ ul {
 li {
     margin: 10px 0;
     font-size: 1.2em;
+    position: relative; /* Needed for positioning the description */
 }
 
 a {
@@ -48,6 +49,22 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+.repo-description {
+    font-size: 0.8em;        /* Smaller font size */
+    font-style: italic;      /* Italicized text */
+    display: none;           /* Hidden by default */
+    position: absolute;
+    bottom: -20px;           /* Position it under the project name */
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+li:hover .repo-description, 
+li:active .repo-description {
+    display: block;          /* Show on hover or tap */
 }
 
 footer {
@@ -65,3 +82,4 @@ footer a {
     text-decoration: none;
     font-weight: bold;
 }
+

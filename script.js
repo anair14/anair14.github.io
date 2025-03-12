@@ -34,7 +34,7 @@ async function fetchGitHubProjects() {
         const listItem = document.createElement("li");
         listItem.innerHTML = `
             <a href="${repo.html_url}" target="_blank">${repo.name}</a>
-            <p>${repo.description || "No description available"}</p>
+            <p class="repo-description">${repo.description || "No description available"}</p>
         `;
         projectsList.appendChild(listItem);
     });
