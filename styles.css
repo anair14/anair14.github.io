@@ -39,7 +39,8 @@ ul {
 li {
     margin: 10px 0;
     font-size: 1.2em;
-    position: relative; /* Needed for positioning the description */
+    position: relative; /* Positioning context for description */
+    display: inline-block; /* Makes list items inline for better control */
 }
 
 a {
@@ -56,15 +57,32 @@ a:hover {
     font-style: italic;      /* Italicized text */
     display: none;           /* Hidden by default */
     position: absolute;
-    bottom: -20px;           /* Position it under the project name */
     left: 0;
     width: 100%;
     text-align: center;
+    background: rgba(0, 0, 0, 0.7); /* Optional: Adds background for better contrast */
+    padding: 5px;
+    z-index: 2;
 }
 
+/* Overlay the description over the list item on hover */
 li:hover .repo-description, 
 li:active .repo-description {
     display: block;          /* Show on hover or tap */
+    top: 0;                  /* Overlay description at the top of the list item */
+    left: 50%;               /* Center the description */
+    transform: translateX(-50%); /* Center horizontally */
+}
+
+/* On larger screens (PC), position the description to the side */
+@media (min-width: 768px) {
+    li:hover .repo-description {
+        top: 0;
+        left: 100%;             /* Move description to the side of the list item */
+        transform: translateX(10px); /* Small gap between item and description */
+        text-align: left;      /* Align text to the left when on the side */
+        width: 200px;          /* Optional: Set a fixed width for the description */
+    }
 }
 
 footer {
