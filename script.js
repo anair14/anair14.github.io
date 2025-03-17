@@ -32,12 +32,10 @@ async function fetchGitHubProjects() {
 
     repos.forEach(repo => {
         const listItem = document.createElement("li");
-        listItem.innerHTML = `
-            <a href="${repo.html_url}" target="_blank">${repo.name}</a>
-            <p class="repo-description">${repo.description || "No description available"}</p>
-        `;
+        listItem.innerHTML = `<a href="${repo.html_url}" target="_blank">${repo.name}</a>`;
         projectsList.appendChild(listItem);
     });
 }
 
 fetchGitHubProjects();
+
